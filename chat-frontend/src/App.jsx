@@ -16,7 +16,9 @@ function App() {
       <h1 className='title'>iChat</h1>
       <div className="mainChat">
 
-        <div className="sidebar">
+      <div className="flex">
+
+      <div className="slidebar">
           <h3>Connected users</h3>
           <ul>
             <li>Anonymous</li>
@@ -26,39 +28,46 @@ function App() {
           <p>Number of connected users: 3</p>
         </div>
 
-        <div className="name">
-          <span className="nameForm">
-            <FontAwesomeIcon icon={faUser} />
-            <input type="text"
-              className="nameInput"
-              id="nameInput"
-              value={name}
-              onChange={handleNameChange}
-              maxLength="20"
-            />
-          </span>
-        </div>
-        <ul className="conversation">
-          <li className="messageLeft">
-            <p className="message">Bonjour tout le monde !</p>
-            <span>author - 18 juin 2024</span>
-          </li>
-          <li className="messageRight">
-            <p className="message">Ca va?</p>
-            <span>author - 18 juin 2024</span>
-          </li>
-          <li className="messageFeedback">
-            <p className="feedback">Toto is typing...</p>
-          </li>
-        </ul>
-        <form className="messageForm">
-          <input type="text" name="message" className='messageInput'
-          //  value={message}
-          //  onChange={handleMessageChange} 
-           />
-          <div className="vDivider"></div>
-          <button type="submit" className="sendButton">Send <FontAwesomeIcon icon={faPaperPlane}/></button>
-        </form>
+
+        <div className="chat">
+
+<div className="name">
+  <span className="nameForm">
+    <FontAwesomeIcon icon={faUser} />
+    <input type="text"
+      className="nameInput"
+      id="nameInput"
+      value={name}
+      onChange={handleNameChange}
+      maxLength="20"
+    />
+  </span>
+</div>
+<ul className="conversation">
+  <li className="messageLeft">
+    <p className="message">Bonjour tout le monde !</p>
+    <span>author - 18 juin 2024</span>
+  </li>
+  <li className="messageRight">
+    <p className="message">Ca va?</p>
+    <span>author - 18 juin 2024</span>
+  </li>
+  <li className="messageFeedback">
+    <p className="feedback">Toto is typing...</p>
+  </li>
+</ul>
+<form className="messageForm">
+  <input type="text" name="message" className='messageInput'
+  //  value={message}
+  //  onChange={handleMessageChange} 
+   />
+  <div className="vDivider"></div>
+  <button type="submit" className="sendButton">Send <FontAwesomeIcon icon={faPaperPlane}/></button>
+</form>
+</div>
+      </div>
+
+
       </div>
     </>
   )

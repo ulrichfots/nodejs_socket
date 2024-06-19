@@ -133,3 +133,45 @@ body {
 .sendButton:hover {
   background-color: #e9e9e9;
 }
+
+.flex{
+  display: flex;
+}
+
+.slidebar{
+  padding: 1em 2em;
+}
+
+.slidebar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slidebar li{
+  margin: 10px 0;
+  padding: 5px;
+  border-raduis: 10px;
+}
+
+.slidebar li:hover{
+  background-color: rgb(109, 108, 108);
+  border-radius: 25px;
+}
+
+.slidebar li a{
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.slidebar li a:hover{
+  color: #2d2d2d;
+}
+
+.slidebar li a:active{
+  color: #2d2d2d;
+}
+
+.slidebar li a:visited{
+  color: #2d2d2d;
+}
