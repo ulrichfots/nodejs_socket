@@ -3,6 +3,11 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
+// pour importer et se connecter au backend
+import { io } from 'socket.io-client';
+
+const socket = io('http://localhost:3000/');
+
 function App() {
   // on déclare 2 states, donc l'équivalent des avriables, qui me permettront de conserver le name ainsi que le message
   const [name, setName] = useState('anonymous');
