@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-body {
-  font-family: 'open sans', sans-serif;
 
+body {
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -25,11 +25,7 @@ body {
   overflow: hidden;
 }
 
-.name > span {
-  color: #bbb;
-}
-
-.name{
+.name {
   display: flex;
   font-size: 32px;
   font-weight: bold;
@@ -38,29 +34,32 @@ body {
   background-color: #ebebeb;
 }
 
+.name > span {
+  color: #bbb;
+}
+
 .nameForm {
   display: flex;
 }
 
 .nameInput {
-  display: flex;
   font-size: 24px;
   font-weight: bold;
   color: #7e7e7e;
   border: none;
-  margin: 0px 12px;
+  margin: 0 12px;
   outline: none;
   background-color: #ebebeb;
 }
 
-.conversation{
+.conversation {
+  margin: 0;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
   height: 400px;
-  margin: 0;
 }
 
 .messageLeft, .messageRight {
@@ -72,16 +71,16 @@ body {
   border-radius: 20px;
 }
 
-.messageLeft{
-  background-color: #ffff;
+.messageLeft {
+  background-color: #fff;
   align-self: flex-start;
   box-shadow: -2px 2px 4px #dcdcdc;
 }
 
-.messageRight{
+.messageRight {
   background-color: #d2f2ff;
   align-self: flex-end;
-  box-shadow: -2px 2px 4px #dcdcdc;
+  box-shadow: 2px 2px 4px #dcdcdc;
 }
 
 .messageLeft span, .messageRight span {
@@ -90,11 +89,11 @@ body {
   font-size: 12px;
 }
 
-.message{
+.message {
   margin: 5px 0;
 }
 
-.messageFeedback{
+.messageFeedback {
   list-style: none;
 }
 
@@ -102,11 +101,11 @@ body {
   font-style: italic;
   margin: 0;
   font-size: 14px;
-  color:#2d2d2D;
+  color: #2d2d2d;
   text-align: center;
 }
 
-.messageForm{
+.messageForm {
   display: flex;
   justify-content: space-between;
 }
@@ -116,62 +115,52 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  background-color: #fff;
   padding: 10px 12px;
+  background-color: #fff;
 }
+
 .vDivider {
-  width: 2px;
   height: 48px;
+  width: 2px;
   background-color: #f6f6f6;
 }
 
 .sendButton {
-  border: 0;
   background-color: white;
+  border: 0;
 }
 
 .sendButton:hover {
   background-color: #e9e9e9;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.slidebar{
+.userList {
   padding: 1em 2em;
 }
 
-.slidebar ul{
+.userList ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.slidebar li{
+.userList li {
   margin: 10px 0;
   padding: 5px;
-  border-raduis: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.slidebar li:hover{
-  background-color: rgb(109, 108, 108);
-  border-radius: 25px;
+.userList li:hover {
+  background-color: green;
 }
 
-.slidebar li a{
-  text-decoration: none;
-  color: #2d2d2d;
-}
-
-.slidebar li a:hover{
-  color: #2d2d2d;
-}
-
-.slidebar li a:active{
-  color: #2d2d2d;
-}
-
-.slidebar li a:visited{
-  color: #2d2d2d;
+/* Style for selected user */
+.userList li.selected {
+  background-color: #d2f2ff;
+  font-weight: bold;
 }
